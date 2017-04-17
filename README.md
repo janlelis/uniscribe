@@ -93,6 +93,15 @@ uniscribe "test strı̈ng"
 
 ## Notes
 
+The proper detetion of graphemes / combined characters depends on your Ruby version:
+
+Ruby | Unicode Version
+-----|----------------
+2.4  | 9.0.0
+2.3  | 8.0.0
+2.2  | 7.0.0
+2.1  | 6.1.0
+
 Also see
 
 - [unibits](https://github.com/janlelis/unibits) - visualizes Unicode encodings

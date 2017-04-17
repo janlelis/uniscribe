@@ -98,6 +98,7 @@ Also see
 - [unibits](https://github.com/janlelis/unibits) - visualizes Unicode encodings
 - [symbolify](https://github.com/janlelis/symbolify) - used for safely printing individual codepoints
 - [characteristics](https://github.com/janlelis/characteristics) - used for detecting blanks and similar
+- [unicopy](https://github.com/janlelis/unicopy) - copy codepoints to clipboard
 - [Unicode® Standard Annex #29: Unicode Text Segmentation](http://unicode.org/reports/tr29/)
 
 Copyright (C) 2017 Jan Lelis <http://janlelis.com>. Released under the MIT license.

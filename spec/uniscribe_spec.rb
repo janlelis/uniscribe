@@ -83,34 +83,38 @@ describe Uniscribe do
     end
 
     describe "misc scripts" do
-      it "HANGUL" do
-        check "ᅘᆇᇈ", /Composition.*HANGUL CHOSEONG SSANGHIEUH.*HANGUL JUNGSEONG YO-O.*HANGUL JONGSEONG NIEUN-PANSIOS/m
-      end
+      if RUBY_VERSION >= "2.4.0"
+        it "HANGUL" do
+          check "ᅘᆇᇈ", /Composition.*HANGUL CHOSEONG SSANGHIEUH.*HANGUL JUNGSEONG YO-O.*HANGUL JONGSEONG NIEUN-PANSIOS/m
+        end
 
-      it "HANGUL 2" do
-        check "각", /Composition.*HANGUL CHOSEONG KIYEOK.*HANGUL JUNGSEONG A.*HANGUL JONGSEONG KIYEOK/m
-      end
+        it "HANGUL 2" do
+          check "각", /Composition.*HANGUL CHOSEONG KIYEOK.*HANGUL JUNGSEONG A.*HANGUL JONGSEONG KIYEOK/m
+        end
 
-      it "HANGUL 3" do
-        check "ᄇᄉᄐ", /Composition.*HANGUL CHOSEONG PIEUP.*HANGUL CHOSEONG SIOS.*HANGUL CHOSEONG THIEUTH/m
-      end
+        it "HANGUL 3" do
+          check "ᄇᄉᄐ", /Composition.*HANGUL CHOSEONG PIEUP.*HANGUL CHOSEONG SIOS.*HANGUL CHOSEONG THIEUTH/m
+        end
 
-      it "TAMIL" do
-        check "நி", /Composition.*TAMIL SYLLABLE NI.*TAMIL LETTER NA.*TAMIL VOWEL SIGN I/m
-      end
+        it "TAMIL" do
+          check "நி", /Composition.*TAMIL SYLLABLE NI.*TAMIL LETTER NA.*TAMIL VOWEL SIGN I/m
+        end
 
-      it "DEVANAGARI" do
-        check "षि", /Composition.*DEVANAGARI LETTER SSA.*DEVANAGARI VOWEL SIGN I/m
+        it "DEVANAGARI" do
+          check "षि", /Composition.*DEVANAGARI LETTER SSA.*DEVANAGARI VOWEL SIGN I/m
+        end
       end
     end
 
     describe "zwj and zwnj" do
-      it "ZWJ" do
-        check "क्‍", /Composition.*DEVANAGARI LETTER KA.*DEVANAGARI SIGN VIRAMA.*ZERO WIDTH JOINER/m
-      end
+      if RUBY_VERSION >= "2.4.0"
+        it "ZWJ" do
+          check "क्‍", /Composition.*DEVANAGARI LETTER KA.*DEVANAGARI SIGN VIRAMA.*ZERO WIDTH JOINER/m
+        end
 
-      it "ZWNJ" do
-        check "t‌", /Composition.*LATIN SMALL LETTER T.*ZERO WIDTH NON-JOINER/m
+        it "ZWNJ" do
+          check "t‌", /Composition.*LATIN SMALL LETTER T.*ZERO WIDTH NON-JOINER/m
+        end
       end
     end
 
@@ -141,35 +145,39 @@ describe Uniscribe do
     end
 
     describe "misc other" do
-      it "␍ + ␊" do
-        check "\r\n", /Composition.*<control-000D> CARRIAGE RETURN.*<control-000A> LINE FEED/m
-      end
-
-      it "REGIONAL" do
-        check "🇺🇳", /Composition.*UNITED NATIONS.*REGIONAL INDICATOR SYMBOL LETTER U.*REGIONAL INDICATOR SYMBOL LETTER N/m
-      end
-
       it "KEYCAP" do
         check "5⃣", /Composition.*DIGIT FIVE.*COMBINING ENCLOSING KEYCAP/m
       end
 
-      it "TAG SEQUENCE" do
-        check "🏴󠁧󠁢󠁳󠁣󠁴󠁿", /Composition.*SCOTLAND.*WAVING BLACK FLAG.*TAG LATIN SMALL LETTER G.*TAG LATIN SMALL LETTER B.*TAG LATIN SMALL LETTER S.*TAG LATIN SMALL LETTER C.*TAG LATIN SMALL LETTER T.*CANCEL TAG/m
-      end
+      if RUBY_VERSION >= "2.4.0"
+        it "␍ + ␊" do
+          check "\r\n", /Composition.*<control-000D> CARRIAGE RETURN.*<control-000A> LINE FEED/m
+        end
 
-      it "EMOJI MODIFIER" do
-        check "🙅🏿", /Composition.*PERSON GESTURING NO: DARK SKIN TONE.*FACE WITH NO GOOD GESTURE.*EMOJI MODIFIER FITZPATRICK TYPE-6/m
-      end
+        it "REGIONAL" do
+          check "🇺🇳", /Composition.*UNITED NATIONS.*REGIONAL INDICATOR SYMBOL LETTER U.*REGIONAL INDICATOR SYMBOL LETTER N/m
+        end
 
-      it "EMOJI ZWJ SEQUENCE" do
-        check "👩‍👩‍👦‍👦", /Composition.*FAMILY.*WOMAN.*ZERO WIDTH JOINER.*WOMAN.*ZERO WIDTH JOINER.*BOY.*ZERO WIDTH JOINER.*BOY/m
+        it "TAG SEQUENCE" do
+          check "🏴󠁧󠁢󠁳󠁣󠁴󠁿", /Composition.*SCOTLAND.*WAVING BLACK FLAG.*TAG LATIN SMALL LETTER G.*TAG LATIN SMALL LETTER B.*TAG LATIN SMALL LETTER S.*TAG LATIN SMALL LETTER C.*TAG LATIN SMALL LETTER T.*CANCEL TAG/m
+        end
+
+        it "EMOJI MODIFIER" do
+          check "🙅🏿", /Composition.*PERSON GESTURING NO: DARK SKIN TONE.*FACE WITH NO GOOD GESTURE.*EMOJI MODIFIER FITZPATRICK TYPE-6/m
+        end
+
+        it "EMOJI ZWJ SEQUENCE" do
+          check "👩‍👩‍👦‍👦", /Composition.*FAMILY.*WOMAN.*ZERO WIDTH JOINER.*WOMAN.*ZERO WIDTH JOINER.*BOY.*ZERO WIDTH JOINER.*BOY/m
+        end
       end
     end
   end
 
   describe "unusual codepoints" do
-    it "safely prints and highlights unusual codepoints" do
-      check "\0A\u{E01D7}\x7F\r\n\u{D0000}\u{81}\u{FFF9}B\u{FFFB}🏴\u{E0061}\u{E007F}\u{10FFFF}", /<control-0000> NULL.*Composition.*LATIN CAPITAL LETTER A.*VARIATION SELECTOR-232.*<control-007F> DELETE.*Composition.*<control-000D> CARRIAGE RETURN.*<control-000A> LINE FEED.*<reserved-D0000>.*<control-0081> HIGH OCTET PRESET.*INTERLINEAR ANNOTATION ANCHOR.*LATIN CAPITAL LETTER B.*INTERLINEAR ANNOTATION TERMINATOR.*Composition.*WAVING BLACK FLAG.*TAG LATIN SMALL LETTER A.*CANCEL TAG.*<noncharacter-10FFFF>/m
+    if RUBY_VERSION >= "2.4.0"
+      it "safely prints and highlights unusual codepoints" do
+        check "\0A\u{E01D7}\x7F\r\n\u{D0000}\u{81}\u{FFF9}B\u{FFFB}🏴\u{E0061}\u{E007F}\u{10FFFF}", /<control-0000> NULL.*Composition.*LATIN CAPITAL LETTER A.*VARIATION SELECTOR-232.*<control-007F> DELETE.*Composition.*<control-000D> CARRIAGE RETURN.*<control-000A> LINE FEED.*<reserved-D0000>.*<control-0081> HIGH OCTET PRESET.*INTERLINEAR ANNOTATION ANCHOR.*LATIN CAPITAL LETTER B.*INTERLINEAR ANNOTATION TERMINATOR.*Composition.*WAVING BLACK FLAG.*TAG LATIN SMALL LETTER A.*CANCEL TAG.*<noncharacter-10FFFF>/m
+      end
     end
 
     it "safely prints and highlights various blanks" do

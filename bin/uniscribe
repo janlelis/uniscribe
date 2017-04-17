@@ -20,7 +20,7 @@ argv = Rationalist.parse(
 
 if argv[:version]
   puts "uniscribe #{Uniscribe::VERSION} by #{Paint["J-_-L", :bold]} <https://github.com/janlelis/uniscribe>"
-  puts "Unicode version is #{Uniscribe::UNICODE_VERSION} (glyph detction #{Uniscribe::UNICODE_VERSION_GLYPH_DETECTION})"
+  puts "Unicode version is #{Uniscribe::UNICODE_VERSION} (glyph detection #{Uniscribe::UNICODE_VERSION_GLYPH_DETECTION || "[not supported]"})"
   exit(0)
 end
 

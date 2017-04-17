@@ -1,0 +1,66 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "rationalist"
+require "uniscribe"
+
+argv = Rationalist.parse(
+  ARGV,
+  string: '_',
+)
+
+if argv[:version]
+  puts "uniscribe #{Uniscribe::VERSION} by #{Paint["J-_-L", :bold]} <https://github.com/janlelis/uniscribe>"
+  puts "Unicode version is #{Uniscribe::UNICODE_VERSION} (glyph detction #{Uniscribe::UNICODE_VERSION_GLYPH_DETECTION})"
+  exit(0)
+end
+
+if argv[:help]
+  puts <<-HELP
+
+  #{Paint["DESCRIPTION", :underline]}
+
+  Describes a string of Unicode characters with their name and shows compositions.
+
+  #{Paint["USAGE", :underline]}
+
+  #{Paint["uniscribe", :bold]} [options] data
+
+  --encoding <encoding> | -e | which (Unicode) encoding to use for given data
+  --wide-ambiguous      |    | ambiguous characters
+  --version             |    | displays version of uniscribe
+  --help                |    | this help page
+
+  #{Paint["COLOR CODING", :underline]}
+
+  #{Paint["blank",      Uniscribe::COLORS[:blank]]}
+  #{Paint["control",    Uniscribe::COLORS[:control]]}
+  #{Paint["format",     Uniscribe::COLORS[:format]]}
+  #{Paint["mark",       Uniscribe::COLORS[:mark]]}
+  #{Paint["unassigned", Uniscribe::COLORS[:unassigned]]}
+  #{Paint["unassigned and ignorable", Uniscribe::COLORS[:ignorable]]}
+
+  random color for other characters and compositions
+
+  #{Paint["MORE INFO", :underline]}
+
+  https://github.com/janlelis/uniscribe
+
+  HELP
+  exit(0)
+end
+
+if argv[:_] && argv[:_][0]
+  data = argv[:_][0]
+elsif !$stdin.tty?
+  data = $stdin.read
+else
+  data = nil
+end
+
+begin
+  Uniscribe.of(data)
+rescue ArgumentError
+  $stderr.puts Paint[$!.message, :red]
+  exit(1)
+end

@@ -7,6 +7,15 @@ require "uniscribe"
 argv = Rationalist.parse(
   ARGV,
   string: '_',
+  alias: {
+    e: 'encoding',
+    v: 'version',
+  },
+  boolean: [
+    'help',
+    'version',
+    'wide-ambiguous',
+  ]
 )
 
 if argv[:version]
@@ -27,9 +36,9 @@ if argv[:help]
   #{Paint["uniscribe", :bold]} [options] data
 
   --encoding <encoding> | -e | which (Unicode) encoding to use for given data
-  --wide-ambiguous      |    | ambiguous characters
-  --version             |    | displays version of uniscribe
   --help                |    | this help page
+  --version             | -v | displays version of uniscribe
+  --wide-ambiguous      |    | ambiguous characters
 
   #{Paint["COLOR CODING", :underline]}
 

@@ -93,7 +93,7 @@ uniscribe "test strı̈ng"
 
 ## Notes
 
-The proper detetion of compositions / graphemes / combined characters depends on your Ruby version:
+The proper detection of compositions / graphemes / combined characters depends on your Ruby version:
 
 Ruby | Unicode Version
 -----|----------------

@@ -67,6 +67,14 @@ uniscribe "test strı̈ng"
 
 ![Screenshot Thai](/screenshots/thai.png?raw=true "Thai")
 
+### Ideographic Variations
+
+`>> uniscribe "辻󠄀㚑󠄁"`
+
+![Screenshot Ideographic Variations](/screenshots/ideographic_variations.png?raw=true "Ideographic Variations")
+
+(the variation is not visible in the screenshot, because my system does not render it correctly)
+
 ### Emoji Sequences
 
 `>> uniscribe "3️⃣🤸‍♀"`
@@ -79,7 +87,7 @@ uniscribe "test strı̈ng"
 
 ![Screenshot Marks](/screenshots/marks.png?raw=true "Marks")
 
-### Some Strange Unicode Characters
+### Random Sequences of some Special Unicode Codepoints
 
 `>> uniscribe "\0A\u{E01D7}\x7F\r\n\u{D0000}\u{81}\u{FFF9}B\u{FFFB}🏴\u{E0061}\u{E007F}\u{10FFFF}"`
 

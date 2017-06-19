@@ -1,6 +1,10 @@
 ## CHANGELOG
 
-### 0.1.0
+### 1.1.0
 
-* Initial release
+- Update Unicode data to 10.0 (except for grapheme detection)
+
+### 1.0.0
+
+- Initial release
 

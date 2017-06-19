@@ -2,7 +2,7 @@
 
 module Uniscribe
   VERSION = "1.0.0".freeze
-  UNICODE_VERSION = "9.0.0".freeze
+  UNICODE_VERSION = "10.0.0".freeze
 
   RUBY_UNICODE_VERSIONS = {
     2.4 => "9.0.0".freeze,

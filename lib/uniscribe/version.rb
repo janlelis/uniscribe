@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Uniscribe
-  VERSION = "1.1.0"
+  VERSION = "1.2.0"
   UNICODE_VERSION = "11.0.0"
 
   RUBY_UNICODE_VERSIONS = {

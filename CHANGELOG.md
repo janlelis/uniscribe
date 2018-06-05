@@ -1,6 +1,6 @@
 ## CHANGELOG
 
-### Next
+### 1.2.0
 
 - Update Unicode data to 11.0 (except for grapheme detection)
 

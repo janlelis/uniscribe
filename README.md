@@ -2,7 +2,7 @@
 
 Describes Unicode characters with their name and shows compositions.
 
-- Helps you understand how glyphs and codepoints are structered within the data
+- Helps you understand how glyphs and codepoints are structured within the data
 - Gives you the names of glyphs and codepoints, which can be used for further research
 - Highlights invalid/special/blank codepoints
 
@@ -105,6 +105,7 @@ The proper detection of compositions / graphemes / combined characters depends o
 
 Ruby | Unicode Version
 -----|----------------
+2.5  | 10.0.0
 2.4  | 9.0.0
 2.3  | 8.0.0
 2.2  | 7.0.0
@@ -118,4 +119,4 @@ Also see
 - [unicopy](https://github.com/janlelis/unicopy) - copy codepoints to clipboard
 - [Unicode® Standard Annex #29: Unicode Text Segmentation](http://unicode.org/reports/tr29/)
 
-Copyright (C) 2017 Jan Lelis <http://janlelis.com>. Released under the MIT license.
+Copyright (C) 2017-2018 Jan Lelis <http://janlelis.com>. Released under the MIT license.

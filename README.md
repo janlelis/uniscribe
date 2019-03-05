@@ -1,4 +1,4 @@
-# uniscribe | Describe the Unicode [![[version]](https://badge.fury.io/rb/uniscribe.svg)](http://badge.fury.io/rb/uniscribe)  [![[travis]](https://travis-ci.org/janlelis/uniscribe.svg)](https://travis-ci.org/janlelis/uniscribe)
+# uniscribe | Describe the Unicode [![[version]](https://badge.fury.io/rb/uniscribe.svg)](https://badge.fury.io/rb/uniscribe)  [![[travis]](https://travis-ci.org/janlelis/uniscribe.svg)](https://travis-ci.org/janlelis/uniscribe)
 
 Describes Unicode characters with their name and shows compositions.
 
@@ -119,4 +119,4 @@ Also see
 - [unicopy](https://github.com/janlelis/unicopy) - copy codepoints to clipboard
 - [Unicode® Standard Annex #29: Unicode Text Segmentation](http://unicode.org/reports/tr29/)
 
-Copyright (C) 2017-2018 Jan Lelis <http://janlelis.com>. Released under the MIT license.
+Copyright (C) 2017-2019 Jan Lelis <http://janlelis.com>. Released under the MIT license.

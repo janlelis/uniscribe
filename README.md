@@ -116,10 +116,12 @@ You can run `uniscribe -v` to check for the Unicode level of your uniscribe vers
 
 Also see
 
-- [unibits](https://github.com/janlelis/unibits) - visualizes Unicode encodings
-- [symbolify](https://github.com/janlelis/symbolify) - used for safely printing individual codepoints
-- [characteristics](https://github.com/janlelis/characteristics) - used for detecting blanks and similar
-- [unicopy](https://github.com/janlelis/unicopy) - copy codepoints to clipboard
-- [Unicode® Standard Annex #29: Unicode Text Segmentation](http://unicode.org/reports/tr29/)
+- CLI: [unibits](https://github.com/janlelis/unibits) - visualizes Unicode encodings
+- CLI: [unicopy](https://github.com/janlelis/unicopy) - copy codepoints to clipboard
+- Website: [character.construction](https://character.construction) - lists notable codepoints
+- Ruby Library: [symbolify](https://github.com/janlelis/symbolify) - used for safely printing individual codepoints
+- Ruby Library: [characteristics](https://github.com/janlelis/characteristics) - used for detecting blanks and similar
+- Unicode® Standard Annex #29: [Unicode Text Segmentation](https://unicode.org/reports/tr29/)
+- Talk: [Ten Unicode Characters You Should Know About as a Programmer](https://www.youtube.com/watch?v=hlryzsdGtZo)
 
 Copyright (C) 2017-2019 Jan Lelis <http://janlelis.com>. Released under the MIT license.

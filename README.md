@@ -105,7 +105,9 @@ Although the gem is generally up to date with Unicode 12, the proper detection o
 
 Ruby | Unicode Version
 -----|----------------
-2.6  | 11.0.0
+2.6.3+ | 12.1.0
+2.6.2  | 12.0.0
+2.6.1- | 11.0.0
 2.5  | 10.0.0
 2.4  | 9.0.0
 2.3  | 8.0.0

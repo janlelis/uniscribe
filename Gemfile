@@ -4,4 +4,4 @@ gemspec
 
 gem "minitest"
 gem "rake"
-gem "irb"
+gem "irb" unless RUBY_ENGINE == "jruby"

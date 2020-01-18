@@ -5,10 +5,10 @@ require File.dirname(__FILE__) + "/lib/uniscribe/version"
 Gem::Specification.new do |gem|
   gem.name          = "uniscribe"
   gem.version       = Uniscribe::VERSION
-  gem.summary       = "Describes Unicode characters."
-  gem.description   = "Describes Unicode characters with their name and shows compositions."
+  gem.summary       = "Describes Unicode characters"
+  gem.description   = "Explains  Unicode characters/code points: Displays their name, category, and shows compositions"
   gem.authors       = ["Jan Lelis"]
-  gem.email         = ["mail@janlelis.de"]
+  gem.email         = ["hi@ruby.consulting"]
   gem.homepage      = "https://github.com/janlelis/uniscribe"
   gem.license       = "MIT"
 
@@ -17,7 +17,7 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
 
-  gem.required_ruby_version = "~> 2.1"
+  gem.required_ruby_version = ">= 2.1"
   gem.add_dependency "unicode-name", "~> 1.8"
   gem.add_dependency "unicode-sequence_name", "~> 1.5"
   gem.add_dependency "unicode-display_width", "~> 1.6"

@@ -126,4 +126,4 @@ Also see
 - Unicode® Standard Annex #29: [Unicode Text Segmentation](https://unicode.org/reports/tr29/)
 - Talk: [Ten Unicode Characters You Should Know About as a Programmer](https://www.youtube.com/watch?v=hlryzsdGtZo)
 
-Copyright (C) 2017-2019 Jan Lelis <http://janlelis.com>. Released under the MIT license.
+Copyright (C) 2017-2020 Jan Lelis <https://janlelis.com>. Released under the MIT license.

@@ -1,5 +1,11 @@
 ## CHANGELOG
 
+### 1.5.0 (unreleased)
+
+- Update Emoji data to 13.0
+- Use unicode-version gem for Ruby / Unicode mapping
+- Fix Object#=~ deprecation warning
+
 ### 1.4.0
 
 - Update Unicode (and Emoji) data to 12.1 (except for grapheme detection)

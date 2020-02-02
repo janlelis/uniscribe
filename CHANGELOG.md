@@ -1,6 +1,6 @@
 ## CHANGELOG
 
-### 1.5.0 (unreleased)
+### 1.5.0
 
 - Update Emoji data to 13.0
 - Use unicode-version gem for Ruby / Unicode mapping

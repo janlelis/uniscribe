@@ -1,5 +1,9 @@
 ## CHANGELOG
 
+### 1.5.1
+
+- Move unicode-version from version.rb to uniscribe.rb to fix gemspec loading
+
 ### 1.5.0
 
 - Update Emoji data to 13.0

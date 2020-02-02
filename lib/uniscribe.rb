@@ -9,8 +9,12 @@ require "characteristics"
 require "paint"
 require "unicode/display_width"
 require "unicode/emoji"
+require "unicode/version"
 
 module Uniscribe
+  UNICODE_VERSION_GLYPH_DETECTION = RUBY_ENGINE == "ruby" &&
+  Unicode::Version.unicode_version
+
   SUPPORTED_ENCODINGS = Encoding.name_list.grep(
     Regexp.union(
       /^UTF-8$/,

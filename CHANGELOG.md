@@ -1,5 +1,10 @@
 ## CHANGELOG
 
+### 1.6.0 (unreleased)
+
+- Update Unicode data to 13.0 (except for grapheme detection, which depends on Ruby's version)
+- Update Emoji data to 13.1
+
 ### 1.5.1
 
 - Move unicode-version from version.rb to uniscribe.rb to fix gemspec loading

@@ -1,4 +1,4 @@
-# uniscribe | Describe the Unicode [![[version]](https://badge.fury.io/rb/uniscribe.svg)](https://badge.fury.io/rb/uniscribe)  [![[travis]](https://travis-ci.org/janlelis/uniscribe.svg)](https://travis-ci.org/janlelis/uniscribe)
+# uniscribe | Describe the Unicode [![[version]](https://badge.fury.io/rb/uniscribe.svg)](https://badge.fury.io/rb/uniscribe)  [![[ci]](https://github.com/janlelis/uniscribe/workflows/Test/badge.svg)](https://github.com/janlelis/uniscribe/actions?query=workflow%3ATest)
 
 Describes Unicode characters with their name and shows compositions.
 

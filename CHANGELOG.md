@@ -1,6 +1,6 @@
 ## CHANGELOG
 
-### 1.7.0 (unreleased)
+### 1.7.0
 
 - Update Unicode data to 14.0 (except for grapheme detection, which depends on Ruby's version)
 - Update Emoji data to 14.0

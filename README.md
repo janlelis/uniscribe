@@ -101,7 +101,7 @@ uniscribe "test strı̈ng"
 
 ## Notes
 
-Although the gem is generally up to date with Unicode 12.1, the proper detection of compositions / graphemes / combined characters [depends on your Ruby version](https://idiosyncratic-ruby.com/73-unicode-version-mapping.html):
+Although the gem is generally up to date with Unicode 14.0, the proper detection of compositions / graphemes / combined characters [depends on your Ruby version](https://idiosyncratic-ruby.com/73-unicode-version-mapping.html):
 
 You can run `uniscribe -v` to check for the Unicode level of your uniscribe version.
 

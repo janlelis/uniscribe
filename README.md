@@ -1,6 +1,6 @@
 # uniscribe | Describe the Unicode [![[version]](https://badge.fury.io/rb/uniscribe.svg)](https://badge.fury.io/rb/uniscribe)  [![[ci]](https://github.com/janlelis/uniscribe/workflows/Test/badge.svg)](https://github.com/janlelis/uniscribe/actions?query=workflow%3ATest)
 
-Describes Unicode characters with their name and shows compositions.
+Describes Unicode characters with their name and shows compositions. **UNICODE 15.0**\*
 
 - Helps you understand how glyphs and codepoints are structured within the data
 - Gives you the names of glyphs and codepoints, which can be used for further research
@@ -99,7 +99,7 @@ uniscribe "test strı̈ng"
 
 ![Screenshot Blanks](/screenshots/blanks.png?raw=true "Blanks")
 
-## Notes
+## \*Notes
 
 Although the gem is generally up to date with Unicode 15.0, the proper detection of compositions / graphemes / combined characters [depends on your Ruby version](https://idiosyncratic-ruby.com/73-unicode-version-mapping.html):
 

@@ -1,6 +1,6 @@
 ## CHANGELOG
 
-### 1.8.0 (unreleased)
+### 1.8.0
 
 - Update Unicode data to 15.0 (except for grapheme detection, which depends on Ruby's version)
 - Update Emoji data to 15.0

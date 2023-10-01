@@ -1,6 +1,6 @@
 # uniscribe | Describe the Unicode [![[version]](https://badge.fury.io/rb/uniscribe.svg)](https://badge.fury.io/rb/uniscribe)  [![[ci]](https://github.com/janlelis/uniscribe/workflows/Test/badge.svg)](https://github.com/janlelis/uniscribe/actions?query=workflow%3ATest)
 
-Describes Unicode characters with their name and shows compositions. **UNICODE 15.0**\*
+Describes Unicode characters with their name and shows compositions. **UNICODE 15.1**\*
 
 - Helps you understand how glyphs and codepoints are structured within the data
 - Gives you the names of glyphs and codepoints, which can be used for further research

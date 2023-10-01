@@ -19,13 +19,13 @@ Gem::Specification.new do |gem|
   gem.metadata      = { "rubygems_mfa_required" => "true" }
 
   gem.required_ruby_version = ">= 2.1"
-  gem.add_dependency "unicode-name", "~> 1.11"
-  gem.add_dependency "unicode-sequence_name", "~> 1.11"
-  gem.add_dependency "unicode-display_width", "~> 2.3"
-  gem.add_dependency "unicode-emoji", "~> 3.3"
-  gem.add_dependency "unicode-version", "~> 1.2"
+  gem.add_dependency "unicode-name", "~> 1.12"
+  gem.add_dependency "unicode-sequence_name", "~> 1.13"
+  gem.add_dependency "unicode-display_width", "~> 2.5"
+  gem.add_dependency "unicode-emoji", "~> 3.4"
+  gem.add_dependency "unicode-version", "~> 1.3"
   gem.add_dependency "symbolify", "~> 1.4"
-  gem.add_dependency "characteristics", "~> 1.5"
+  gem.add_dependency "characteristics", "~> 1.6"
   gem.add_dependency "paint", ">= 0.9", "< 3.0"
   gem.add_dependency "rationalist", "~> 2.0", ">= 2.0.1"
 end

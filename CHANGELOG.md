@@ -1,6 +1,11 @@
 ## CHANGELOG
 
-### 1.10.0 (unreleased)
+### 1.11.0
+
+- Bump unicode-name and unicode-sequence_name:
+  Fixed and improved character names, see respective changelogs
+
+### 1.10.0
 
 - Update Unicode data to 16.0 (except for grapheme detection, which depends on Ruby's version)
 - Update Emoji data to 16.0

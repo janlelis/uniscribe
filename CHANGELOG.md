@@ -1,5 +1,9 @@
 ## CHANGELOG
 
+### 1.11.1
+
+- Allow unicode-display_width and unicode-emoji to be upgraded to next major version
+
 ### 1.11.0
 
 - Bump unicode-name and unicode-sequence_name:

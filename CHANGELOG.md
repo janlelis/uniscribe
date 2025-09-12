@@ -1,5 +1,9 @@
 ## CHANGELOG
 
+### 1.12.0
+
+- Bump dependencies to Unicode 17.0
+
 ### 1.11.1
 
 - Allow unicode-display_width and unicode-emoji to be upgraded to next major version

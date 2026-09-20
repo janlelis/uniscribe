@@ -1,6 +1,6 @@
 # uniscribe | Describe the Unicode [![[version]](https://badge.fury.io/rb/uniscribe.svg)](https://badge.fury.io/rb/uniscribe)  [![[ci]](https://github.com/janlelis/uniscribe/workflows/Test/badge.svg)](https://github.com/janlelis/uniscribe/actions?query=workflow%3ATest)
 
-Describes Unicode characters with their name and shows compositions. **UNICODE 17.0**\*
+Describes Unicode characters with their name and shows compositions. **UNICODE 18.0**\* (September 2026)
 
 - Helps you understand how glyphs and codepoints are structured within the data
 - Gives you the names of glyphs and codepoints, which can be used for further research
@@ -101,7 +101,7 @@ uniscribe "test strı̈ng"
 
 ## \*Notes
 
-Although the gem is generally up to date with Unicode 16.0, the proper detection of compositions / graphemes / combined characters [depends on your Ruby version](https://idiosyncratic-ruby.com/73-unicode-version-mapping.html):
+Although the gem is generally up to date with latest Unicode data, the proper detection of compositions / graphemes / combined characters [depends on your Ruby version](https://idiosyncratic-ruby.com/73-unicode-version-mapping.html):
 
 You can run `uniscribe -v` to check for the Unicode level of your uniscribe version.
 
@@ -115,4 +115,4 @@ Also see
 - Unicode® Standard Annex #29: [Unicode Text Segmentation](https://unicode.org/reports/tr29/)
 - Talk: [Ten Unicode Characters You Should Know About as a Programmer](https://www.youtube.com/watch?v=hlryzsdGtZo)
 
-Copyright (C) 2017-2024 Jan Lelis <https://janlelis.com>. Released under the MIT license.
+Copyright (C) 2017-2026 Jan Lelis <https://janlelis.com>. Released under the MIT license.

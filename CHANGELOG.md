@@ -1,5 +1,9 @@
 ## CHANGELOG
 
+### 1.13.0
+
+- Bump dependencies to Unicode 18.0
+
 ### 1.12.0
 
 - Bump dependencies to Unicode 17.0
